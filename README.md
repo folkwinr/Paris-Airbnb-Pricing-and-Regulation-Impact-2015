@@ -1,4 +1,4 @@
-![Paris Airbnb Project Cover](picture.png)
+![Paris Airbnb Project Cover](paris.png)
 
 # 🏙️ Paris Airbnb Pricing & Regulation Impact (2015)
 ### From “data analysis” to “decision-ready story” (2026 BI style)
