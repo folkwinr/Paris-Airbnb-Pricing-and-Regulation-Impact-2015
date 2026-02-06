@@ -1,7 +1,7 @@
 ![Paris Airbnb Project Cover](paris.png)
 
 # 🏙️ Paris Airbnb Pricing & Regulation Impact (2015)
-### Decision-ready data story (2026 BI style)
+### Decision-ready data story 
 
 ## 🔥 One-line story
 **After 2015 regulations, new host growth dropped sharply and average prices started rising again — likely due to reduced competition.**
