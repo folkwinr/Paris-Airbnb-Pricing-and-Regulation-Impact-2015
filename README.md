@@ -19,7 +19,7 @@ This project shows a clear market signal:
 
 ---
 
-## ✅ What I did (What we did)
+## ✅ What I did
 I built 3 simple, chart-ready views:
 - 🗺️ **Average price by neighbourhood** (find premium vs affordable areas)
 - 🛏️ **Average price by accommodates** in the most expensive area (capacity → pricing)
