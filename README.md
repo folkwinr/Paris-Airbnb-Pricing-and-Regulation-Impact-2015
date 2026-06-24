@@ -1,50 +1,133 @@
 ![Paris Airbnb Project Cover](paris.png)
+# 🏙️ Paris Airbnb Supply & Pricing Shift After 2015
 
-# 🏙️ Paris Airbnb Pricing & Regulation Impact (2015)
-### Decision-ready data story 
+## 🔥 One-line Story
 
-## 🔥 One-line story
-**After 2015 regulations, new host growth dropped sharply and average prices started rising again — likely due to reduced competition.**
-
----
-
-## 🎯 Why this matters (So what?)
-Paris restricted short-term rentals in 2015.  
-This project shows a clear market signal:
-
-- 🧑‍🏠 **Supply growth slowed** (fewer new hosts)
-- 💰 **Prices increased again** (less competition)
-
-**Trade-off:** regulation may protect housing, but it can reduce supply and raise prices for travelers.
+After the 2015 regulation period, **new Airbnb host/listing growth dropped sharply from its peak**, while **average prices increased again from 2015 to 2020**.
 
 ---
 
-## ✅ What I did
-I built 3 simple, chart-ready views:
-- 🗺️ **Average price by neighbourhood** (find premium vs affordable areas)
-- 🛏️ **Average price by accommodates** in the most expensive area (capacity → pricing)
-- 📈 **Yearly trends**: new hosts + average price (before/after 2015)
+## 🎯 Why This Matters
 
-Then I visualized them with clean charts to tell one clear story.
+Short-term rental regulation can create a market trade-off:
 
----
+- 🏠 Protect local housing
+- 📉 Slow down new Airbnb supply
+- 💰 Increase prices if competition drops
 
-## 📌 Key findings (What happened?)
-- **Neighbourhood is the biggest driver of price** (premium zones stand out)
-- **Bigger capacity generally costs more** (but extreme groups can be thin data)
-- **New hosts fall strongly after 2015**
-- **Prices rise again as host growth slows**
+This project analyzes Airbnb listings in Paris to understand what changed around 2015.
 
 ---
 
-## 🧭 What I would do next (Now what?)
-To strengthen causality and make this decision-ready for policy/business:
-- Compare **pre vs post 2015** more formally
-- Break down by **neighbourhood segments** (hotspots vs residential)
-- Add robust metrics (median/percentiles) for thin groups
+## 📊 Key Metrics
+
+| Metric | Value |
+|---|---:|
+| Clean Paris listings analyzed | **64,628** |
+| Average nightly price | **€113.20** |
+| Median nightly price | **€80.00** |
+| Peak year for new hosts/listings | **2015** |
+| New hosts/listings in 2015 | **12,147** |
+| Average price change, 2015 → 2020 | **+38.5%** |
 
 ---
 
-## 🛠️ Tools
-Python (pandas, matplotlib, seaborn)
+## 📌 Key Findings
 
+### 1. 🗺️ Location drives price
+
+Airbnb prices vary strongly by neighbourhood.
+
+- **Elysee:** €211.37 average price  
+- **Menilmontant:** €74.96 average price  
+
+Elysee is almost **2.8x more expensive** than Menilmontant.
+
+---
+
+### 2. 🛏️ Bigger listings are more expensive
+
+In Elysee:
+
+- **2-person listings:** €155.10 average price  
+- **6-person listings:** €355.51 average price  
+
+Capacity is a clear pricing driver.
+
+---
+
+### 3. 📉 New host/listing growth slowed after 2015
+
+2015 was the peak year:
+
+- **2015:** 12,147 new hosts/listings
+
+After that peak:
+
+- **2016:** -27.0%
+- **2017:** -62.3%
+- **2018:** -64.6%
+- **2019:** -53.2%
+
+This shows a strong slowdown in market growth after 2015.
+
+---
+
+### 4. 💰 Prices increased after growth slowed
+
+Average price decreased before 2015:
+
+- **2009:** €159.64  
+- **2014:** €100.25  
+- Change: **-37.2%**
+
+After 2015, average price increased:
+
+- **2015:** €103.65  
+- **2020:** €143.52  
+- Change: **+38.5%**
+
+This suggests that slower supply growth may have supported higher average prices.
+
+---
+
+## 🧠 Main Takeaway
+
+The Paris Airbnb market changed around 2015.
+
+> **Supply growth peaked in 2015, then slowed sharply. At the same time, average prices rose again until 2020.**
+
+This pattern is consistent with a tighter market: fewer new listings entering, and higher average prices.
+
+---
+
+## 🧭 Recommendations
+
+| Insight | Recommendation |
+|---|---|
+| Prices vary strongly by neighbourhood | Analyze pricing at neighbourhood level |
+| Capacity affects price | Compare listings with similar size |
+| New listing growth slowed after 2015 | Track supply growth after regulation |
+| Prices rose after growth slowed | Monitor supply and price together |
+
+---
+
+## ⚠️ Limitations
+
+This analysis shows patterns, but it does **not** prove that regulation caused the change.
+
+Other factors may also affect the market:
+
+- Tourism demand
+- COVID-19
+- Seasonality
+- Economic conditions
+- Market saturation
+
+Also, yearly trends are based on `host_since`, not historical booking prices.
+
+---
+
+## 🛠️ Tools Used
+
+Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook
